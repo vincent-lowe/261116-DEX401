@@ -1,4 +1,4 @@
-#### DEX480 - DataWeave Development Classroom Reference - YYMMDD - TZ
+#### DEX475 - API Design with Mulesoft Reference - YYMMDD - TZ
 
 Instructor Name
 
@@ -19,7 +19,7 @@ Survey Link:				https://www.research.net/r/trailheadacademy
 Survey ID:				XXXXXXX
 
 -------------------------------------------------------------------------------------------------------------------
-Class System Setup (pre-class): https://trailhead.salesforce.com/help?article=Computer-Setup-Guide-for-MuleSoft-Expert-Led-Classes#DEX480
+Class System Setup (pre-class): https://trailhead.salesforce.com/help?article=Computer-Setup-Guide-for-MuleSoft-Expert-Led-Classes#DEX475
 
 DataWeave Playground:
 https://dataweave.mulesoft.com/learn/
@@ -48,7 +48,9 @@ https://anypoint.mulesoft.com
 https://anypoint.mulesoft.com/exchange/?view=grid&type=app
 
 Classroom Playlist
+
 -------------------------------------------------------------------------------------------------------------------
+
 |Track Title|Artist|Notes|
 |-----------|------|-----|
 
