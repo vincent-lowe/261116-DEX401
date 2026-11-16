@@ -4,6 +4,10 @@ Vincent Lowe
 
 vlowe@salesforce.com
 
+## Break Schedule
+11:30 PST - 45 minute break
+2:00 PST - 45 minute break
+
 -------------------------------------------------------------------------------------------------------------------
 Trailhead Academy:						https://trailheadacademy.salesforce.com/my-learning
 
