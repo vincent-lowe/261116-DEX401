@@ -1,0 +1,55 @@
+#%RAML 1.0
+title: American Flights API
+version: v1
+
+/flights:
+  description: A collection of flight records
+  get:
+    displayName: Get Flights
+    description: Retrieve a set of flight records
+    queryParameters:
+      destination?:
+        enum:
+          - SFO
+          - LAX
+          - CLE
+    responses:
+      200:
+        body:
+          application/json:
+            type: array
+      400:
+        body:
+          application/json:
+            type: object
+            example:
+              responseMessage: Bad request Please refer to the documentation
+  post:
+    description: Create a new flight record with the supplied information
+    displayName: Create Flight
+    body:
+      application/json:
+        type: object
+    responses:
+      201:
+        body:
+          application/json:
+            example:
+              responseMessage: Flight record added (not really)
+      504:
+        body:
+          application/json:
+            example:
+              responseMessage: Backend service unavailable
+
+  /{ID}:
+    description: A single flight record matching ID
+    get:
+      displayName: Get Flight by ID
+      description: Retrieve one flight record matching ID
+      responses:
+        200:
+          body:
+            application/json:
+              type: object
+
