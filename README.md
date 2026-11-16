@@ -4,12 +4,6 @@ Vincent Lowe
 
 vlowe@salesforce.com
 
-## Name
-
-## Company
-
-## Experience
-
 -------------------------------------------------------------------------------------------------------------------
 Trailhead Academy:						https://trailheadacademy.salesforce.com/my-learning
 
