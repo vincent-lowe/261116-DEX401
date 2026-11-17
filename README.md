@@ -4,9 +4,6 @@ Vincent Lowe
 
 vlowe@salesforce.com
 
-## Break Schedule
-11:30 PST - 45 minute break
-2:00 PST - 45 minute break
 
 -------------------------------------------------------------------------------------------------------------------
 Trailhead Academy:						https://trailheadacademy.salesforce.com/my-learning
@@ -19,6 +16,7 @@ Survey ID:			TASM-2209699
 -------------------------------------------------------------------------------------------------------------------
 
 Cloudshare login URL: https://use.cloudshare.com/Class/hfmom?email=agentv%40gmail.com&passphrase=Vikram%20the%20Despondent%20Shark
+
 
 Cloudshare Passphrase: Vikram the Despondent Shark
 
