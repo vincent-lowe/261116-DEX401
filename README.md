@@ -63,3 +63,6 @@ MuleSoft Pricing & Support: https://www.mulesoft.com/anypoint-pricing
 |Good Morning American|Arlo Guthrie||
 |Smooth Criminal|Luca Stricagnoli||
 |We Don't Talk about Bruno|Voice Play|acapella cover of song from Encanto|
+|The Sound of Silence|Disturbed|somebody broke this song!
+|Pickup Truck Song|Jerry Jeff Walker||
+
