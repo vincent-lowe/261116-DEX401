@@ -17,9 +17,10 @@ Survey Link:			https://www.research.net/r/trailheadacademy
 Survey ID:			TASM-2209699
 
 -------------------------------------------------------------------------------------------------------------------
-Zoom Link: < Zoom Link >
 
-Meeting ID: < Meeting ID >
+Cloudshare login URL: https://use.cloudshare.com/Class/hfmom?email=agentv%40gmail.com&passphrase=Vikram%20the%20Despondent%20Shark
+
+Cloudshare Passphrase: Vikram the Despondent Shark
 
 Class System Setup (pre-class): https://trailhead.salesforce.com/help?article=Computer-Setup-Guide-for-MuleSoft-Expert-Led-Classes#DEX401
 
