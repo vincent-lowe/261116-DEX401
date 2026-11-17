@@ -2,6 +2,9 @@
 title: American Flights API
 version: v1
 
+types:
+  AmericanFlight: !include exchange_modules/68ef9520-24e9-4cf2-b2f5-620025690913/training-american-flight-data-type/1.0.1/AmericanFlightDataType.raml
+
 /flights:
   description: A collection of flight records
   get:
@@ -17,11 +20,11 @@ version: v1
       200:
         body:
           application/json:
-            type: array
+            type: AmericanFlight[]
+            example: !include /exchange_modules/68ef9520-24e9-4cf2-b2f5-620025690913/training-american-flights-example/1.0.1/AmericanFlightsExample.raml
       400:
         body:
           application/json:
-            type: object
             example:
               responseMessage: Bad request Please refer to the documentation
   post:
@@ -29,7 +32,8 @@ version: v1
     displayName: Create Flight
     body:
       application/json:
-        type: object
+        type: AmericanFlight
+        example: !include dataTypes/AmericanFlightExample.raml
     responses:
       201:
         body:
@@ -51,5 +55,4 @@ version: v1
         200:
           body:
             application/json:
-              type: object
-
+              type: AmericanFlight
