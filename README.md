@@ -60,4 +60,6 @@ MuleSoft Pricing & Support: https://www.mulesoft.com/anypoint-pricing
 |Sixteen Tons|Geoff Castellucci|every voice on the track is Geoff!|
 |My Walking Stick|Leon Redbone||
 |The Hitter|Mark Erelli|Mark wrote this about his son|
-
+|Good Morning American|Arlo Guthrie||
+|Smooth Criminal|Luca Stricagnoli||
+|We Don't Talk about Bruno|Voice Play|acapella cover of song from Encanto|
