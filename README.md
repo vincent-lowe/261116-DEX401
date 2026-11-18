@@ -69,4 +69,6 @@ MuleSoft Pricing & Support: https://www.mulesoft.com/anypoint-pricing
 |Stairway to Heaven|Luca Stricagnoli||
 |Hotel California|Laszlo Buring|cover in the style of Johnny Cash|
 |Hello, Goodbye|The Beatles||
+|Have you Ever Seen the Rain|Willie Nelson (feat. Paula Nelson||
+|This Old Town|Nanci Griffith|from her album Other Voices, Other Rooms|
 
