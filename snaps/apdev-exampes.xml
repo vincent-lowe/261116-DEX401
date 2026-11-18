@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="a69e87f3-9307-46fb-9edc-0e28c4a2cb09" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<flow name="goodbyeFlow" doc:id="d8e40637-49e5-4dc8-81f6-04dfd0e3fc0d" >
+		<http:listener doc:name="GET /goodbye" doc:id="87245617-8c47-48f6-bcec-67689dcf8833" config-ref="HTTP_Listener_config" path="/goodbye" allowedMethods="get"/>
+		<set-payload value='#["Goodbye and Good Luck"]' doc:name="Set Payload" doc:id="e2ff1bba-9f71-4307-93bb-b10cbb578a00" />
+		<logger level="INFO" doc:name="Goodbye" doc:id="75458801-9ed4-4abe-9b83-2df78dba66c0" message='#[output json&#10;---&#10;{&#10;	reporter: "Goodbye Logger",&#10;	theSuppliedName: attributes.queryParams.firstname,&#10;	theConfiguredName: vars.givenName,&#10;	thePayload: payload&#10;}]'/>
+	</flow>
+	<flow name="helloFlow" doc:id="1b610200-fa6d-4b3b-a9e6-220d097ce440" >
+		<http:listener doc:name="GET /hello" doc:id="b42adc5e-687c-450f-a2c5-2df22b419571" config-ref="HTTP_Listener_config" path="/hello" allowedMethods="GET"/>
+		<set-variable value='#[attributes.queryParams.firstname default "unassigned"]' doc:name="givenName" doc:id="4d9e2a4d-2f2e-4a53-9d66-ff050da64be2" variableName="givenName"/>
+		<set-payload value='#["Hello cruel $(vars.givenName)!"]' doc:name="Set Payload" doc:id="99888851-2ea3-4633-b81b-f86b65284849" />
+		<logger level="INFO" doc:name="Audit" doc:id="0338b2c8-f3b1-4d42-b82a-54c02a5dbeb7" message='#[output json&#10;---&#10;{&#10;	reporter: "Audit Logger",&#10;	theQueryParamName: attributes.queryParams.firstname,&#10;	theConfiguredName: vars.givenName,&#10;	thePayload: payload&#10;}]'/>
+		<http:request method="GET" doc:name="Request" doc:id="a43b757e-ad1f-479f-a887-b099415fbc7c" url="http://localhost:8081/goodbye">
+			<http:body ><![CDATA[#[null]]]></http:body>
+		</http:request>
+		<logger level="INFO" doc:name="Hello" doc:id="014bcef4-ce80-4114-a7f7-4a513e68e01e" message='#[output json&#10;---&#10;{&#10;	reporter: "Hello Logger",&#10;	theSuppliedName: attributes.queryParams.firstname,&#10;	theConfiguredName: vars.givenName,&#10;	thePayload: payload&#10;}]'/>
+	</flow>
+</mule>
